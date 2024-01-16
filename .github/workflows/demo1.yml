@@ -1,5 +1,8 @@
 name: Output Information
-on: ...
+on: 
+ pull_request:
+  types:
+   - opened
 jobs:
  deploy:
   runs-on: ubuntu-latest
